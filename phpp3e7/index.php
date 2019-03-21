@@ -1,6 +1,3 @@
-<?php
-$number = 1;
- ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
@@ -11,9 +8,9 @@ $number = 1;
     <h1>PHP - PARTIE 3 - EXO 7</h1>
     <p><strong>En allant de 1 à 100 avec un pas de 15, afficher le message On tient le bon bout.</strong></p>
     <?php
-    while($number <= 100) { ?>
+    for ($number = 1; $number <= 100 ; $number += 15) { ?>
       <p><?php echo 'On tient le bon bout : ' . $number; ?></p>
-      <?php $number += 15;
+      <?php
     }
      ?>
   </body>

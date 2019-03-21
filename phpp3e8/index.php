@@ -11,9 +11,9 @@ $number = 200;
     <h1>PHP - PARTIE 3 - EXO 8</h1>
     <p><strong>En allant de 200 à 0 avec un pas de 12, afficher le message Enfin !!!!</strong></p>
     <?php
-    while($number >= 0) { ?>
+    for ($number = 200; $number >= 0 ; $number -= 12) { ?>
       <p><?php echo 'Enfin !!!! : ' . $number; ?></p>
-      <?php $number -= 12;
+      <?php
     }
      ?>
   </body>
